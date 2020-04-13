@@ -1,4 +1,5 @@
 import { pingPong } from './ping-pong';
+import './styles.css';
 
 $(document).ready(function() {
   $('#ping-pong-form').submit(function(event) {
@@ -7,6 +8,7 @@ $(document).ready(function() {
     var output = pingPong(goal);
     output.forEach(function(element) {
       $('#solution').append("<li>" + element + "</li>");
+      console.log("catch me please");
     });
   });
 });
